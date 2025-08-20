@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255,255,255,0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url('./Section\ \(2\).svg') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-box input,
+.search-box select,
+.search-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-box button {
+  background: #ff5722;
+  color: white;
+  cursor: pointer;
+}
+
+/* Featured Trips */
+.featured {
+  padding: 50px 40px;
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+}
+
+.trip-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.card p {
+  margin: 0 10px;
+  color: gray;
+}
+
+.card span {
+  display: block;
+  margin: 10px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* Trending */
+.trending {
+  padding: 50px 40px;
+  background: #f9f9f9;
+}
+
+.trend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.trend-item {
+  background: url(./div.featureCard__image\ \(1\).svg);
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+}
+
+.trend-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+
+  
+
+.n{
+    background: url(./div.featureCard__image\ \(2\).svg);
+    height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+}
+.z{
+    background: url(./Link.svg);
+     height: 250px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+}
+.e{
+    background: url(./div.featureCard__image\ \(3\).svg);
+    height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+}
+.t{
+    background: url(./Link\ \(1\).svg);
+      height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;  
+}
+.s{
+    background: url(./div.featureCard__image\ \(4\).svg);
+         height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+}
+header.promo-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: #fff0e6;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-text {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.promo-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.promo-text h1 span {
+  color: #ff7b29;
+}
+
+.promo-text p {
+  margin: 15px 0;
+}
+
+.promo-text button {
+  background: #ff7b29;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.promo-image {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.promo-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.attractions-section {
+  padding: 40px 20px;
+}
+
+.attractions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.attractions-header h2 {
+  font-size: 1.8rem;
+}
+
+.attractions-header a {
+  text-decoration: none;
+  color: #555;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.attraction-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.attraction-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.bek{
+  background: url(./Section\ →\ image.svg);
+  text-align: center;
+  margin: 100px;
+  padding: 50px;
+  background-size: cover;
+  
+}
+.p{
+  color: chocolate;
+}
+.m{
+  background: url(./Frame.svg);
+  color: #ffffff;
+  /* padding: 100px;
+  margin: 50px; */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.y{
+  color: #d6aeae;
+}
+.g{
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+}
+.o{
+  height: 30px  ;
+  width: 100px;
+  border-radius: 5px;
+}
+.w{
+  padding: 40px;
+}
+footer{
+  background-color: wheat;
+
+}
+hr{
+  background-color: #333;
+}
